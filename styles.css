@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 25px;
+  padding: 25px;
+  border: 2px solid #ED2939;
+  border-radius: 50px;
+  box-shadow: 0 0 55px #ED2939;
+}
+
+.header-title {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header-logo {
+  margin-right: 10px;
+}
+
+.titles {
+  text-align: center;
+}
+
+.subtitleMilesToKm {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.milesToKilometersConverter, .kilometersToMilesConverter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-text {
+  border: 2px solid #ED2939;
+  border-radius: 10px;
+  margin: 0 0 0 5px; 
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.inputValue {
+  min-width: 250px; 
+  height: 40px;
+  border: 1px solid black;
+  padding-left: 5px;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outputValue {
+  display: flex;
+  align-items: center;
+  min-width: 250px; 
+  min-height: 40px;
+  max-height: 40px;
+  border: 1px solid black;
+  padding-left: 5px;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.convert-button {
+  display: block;
+  background-color: #ED2939;
+  border: 1px solid #ED2939;
+  color: white;
+  border-radius: 10px;
+  padding: 10px; 
+  margin: 20px 5px;
+  font-size: 18px;
+}
+
+.convert-button:hover {
+  border: 1px solid #ED2939;
+  background-color: white;
+  color: #ED2939;
+}
+
+.divider {
+  height: 2px;
+  background-color: #ED2939;
+  margin: 15px 0;
+}
+
+
+@media (min-width: 576px) {
+  .wrapper {
+    margin: 25px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 25px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 50px 150px;
+    padding: 120px 100px;
+  }
+
+  .milesToKilometersConverter, .kilometersToMilesConverter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .convert-button {
+    margin: 0 5px;
+  }
+}

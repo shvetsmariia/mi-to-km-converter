@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Converter</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <a href="" class="header-title">
+          <img src="./images/converter.png" alt="Converter" width="30" height="24" class="header-logo">
+          <span>Converter | Miles vs. Kilometers</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="titles">
+        <h2 class="titleMilesToKm">Convert miles into kilometers</h2>
+        <p class="subtitleMilesToKm">1 mile = 1.609344 kilometers</p>
+      </div>
+      <section class="milesToKilometersConverter">
+        <div class="form-content">
+          <input type="text" name="inputMiles" id="inputMiles" class="inputValue" placeholder="Enter the value in miles" min="0">
+          <p class="form-text">mi</p>
+        </div>
+        <button type="button" id="convertButton" class="convert-button">Convert</button>
+        <div class="form-content">
+          <output type="text" id="outputKilometers" class="outputValue"></output>
+          <p class="form-text">km</p>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <div class="titles">
+        <h2 class="titleMilesToKm">Convert kilometers into miles</h2>
+        <p class="subtitleMilesToKm">1 kilometer = 0.621371 miles</p>
+      </div>
+      <section class="kilometersToMilesConverter">
+        <div class="form-content">
+          <input type="text" name="inputKilometers" id="inputKilometers" class="inputValue" placeholder="Enter the value in kilometers" min="0">
+          <p class="form-text">km</p>
+        </div>
+        <button onclick="convertIntoMiles()" type="button" id="" class="convert-button">Convert</button>
+        <div class="form-content">
+          <output type="text" id="outputMiles" class="outputValue"></output>
+          <p class="form-text">mi</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
