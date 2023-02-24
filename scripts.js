@@ -1,20 +1,43 @@
-document.getElementById('convertButton').onclick = function() {
-  let miles = document.getElementById("inputMiles").value; 
-  let km = miles * 1.609344; 
+document.getElementById('renderConvertIntoKilometers').onclick = function() {
+  const mi = document.getElementById("inputMiles").value; 
+  let km = mi * 1.609344; 
   km = km.toFixed(3);
   document.getElementById("outputKilometers").innerHTML = km;  
 }
 
-function convertIntoMiles() {
-  let kilometers = document.getElementById("inputKilometers").value; 
-  let mi = kilometers * 0.621371; 
+document.getElementById('renderConvertIntoMiles').onclick = function() {
+  const km = document.getElementById("inputKilometers").value; 
+  let mi = km * 0.621371; 
+  mi = mi.toFixed(3);
+  document.getElementById("outputMiles").innerHTML = mi;  
+}
+
+function renderConvertIntoKilometers() {
+  const mi = document.getElementById("inputMiles").value; 
+  let km = mi * 1.609344; 
+  km = km.toFixed(3);
+  document.getElementById('outputKilometers').innerHTML = km;  
+}
+
+function renderConvertIntoMiles() {
+  const km = document.getElementById("inputKilometers").value; 
+  let mi = km * 0.621371; 
   mi = mi.toFixed(3);
   document.getElementById('outputMiles').innerHTML = mi;  
 }
 
-// document.getElementById('convertButtonTwo').onclick = function() {
-//   let kilometers = document.getElementById("inputKilometers").value; 
-//   let mi = kilometers * 0.621371; 
-//   mi = mi.toFixed(3);
-//   document.getElementById("outputMiles").innerHTML = mi;  
-// }
+function convertMiToKm (mi) {
+  const milesInOneKm = 0.621371; 
+  km = milesInOneKm; 
+  
+  return (mi * km); 
+}
+console.log(convertMiToKm(1).toFixed(3));
+
+function convertKmToMi (km) {
+  const kmInOneMile = 1.609344; 
+  mi = kmInOneMile; 
+  
+  return (km * mi); 
+}
+console.log(convertKmToMi(1).toFixed(3));

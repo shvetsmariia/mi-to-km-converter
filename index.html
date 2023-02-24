@@ -27,7 +27,7 @@
           <input type="text" name="inputMiles" id="inputMiles" class="inputValue" placeholder="Enter the value in miles" min="0">
           <p class="form-text">mi</p>
         </div>
-        <button type="button" id="convertButton" class="convert-button">Convert</button>
+        <button onclick="renderConvertIntoKilometers()" type="button" id="renderConvertIntoKilometers" class="convert-button">Convert</button>
         <div class="form-content">
           <output type="text" id="outputKilometers" class="outputValue"></output>
           <p class="form-text">km</p>
@@ -43,7 +43,7 @@
           <input type="text" name="inputKilometers" id="inputKilometers" class="inputValue" placeholder="Enter the value in kilometers" min="0">
           <p class="form-text">km</p>
         </div>
-        <button onclick="convertIntoMiles()" type="button" id="" class="convert-button">Convert</button>
+        <button onclick="renderConvertIntoMiles()" type="button" id="renderConvertIntoMiles" class="convert-button">Convert</button>
         <div class="form-content">
           <output type="text" id="outputMiles" class="outputValue"></output>
           <p class="form-text">mi</p>
