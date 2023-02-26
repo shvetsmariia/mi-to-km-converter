@@ -26,18 +26,18 @@ function renderConvertIntoMiles() {
   document.getElementById('outputMiles').innerHTML = mi;  
 }
 
-function convertMiToKm (mi) {
-  const milesInOneKm = 0.621371; 
-  km = milesInOneKm; 
+// function convertMiToKm (mi) {
+//   const milesInOneKm = 0.621371; 
+//   km = milesInOneKm; 
   
-  return (mi * km); 
-}
-console.log(convertMiToKm(1).toFixed(3));
+//   return (mi * km); 
+// }
+// console.log(convertMiToKm(1).toFixed(3));
 
-function convertKmToMi (km) {
-  const kmInOneMile = 1.609344; 
-  mi = kmInOneMile; 
+// function convertKmToMi (km) {
+//   const kmInOneMile = 1.609344; 
+//   mi = kmInOneMile; 
   
-  return (km * mi); 
-}
-console.log(convertKmToMi(1).toFixed(3));
+//   return (km * mi); 
+// }
+// console.log(convertKmToMi(1).toFixed(3));
