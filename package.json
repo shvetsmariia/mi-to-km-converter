@@ -1,0 +1,27 @@
+{
+  "name": "mi-to-km-app-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convertFunction.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shvetsmariia/mi-to-km-converter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shvetsmariia/mi-to-km-converter/issues"
+  },
+  "homepage": "https://github.com/shvetsmariia/mi-to-km-converter#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
